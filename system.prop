@@ -1,0 +1,21 @@
+# system.prop for zoom2
+# This overrides settings in the products/generic/system.prop file
+#
+# rild.libpath=/system/lib/libreference-ril.so
+# rild.libargs=-d /dev/ttyS0
+ro.sf.lcd_density=160
+com.ti.omap_enhancement=true
+opencore.asmd=1
+keyguard.no_require_sim=1
+wifi.interface=tiwlan0
+alsa.mixer.playback.master=DAC2 Analog
+alsa.mixer.capture.master=Analog
+#ro.media.dec.aud.wma.enabled=1
+#ro.media.dec.vid.wmv.enabled=1
+dalvik.vm.heapsize=32m
+ro.opengles.version=131072
+
+# Define JPEG codec to load. (Set libskiahw with 1 & Set ARM with 0)
+jpeg.libskiahw.decoder.enable=1
+# Define JPEG Threashold for Image size (bytes)
+jpeg.libskiahw.decoder.thresh=100000

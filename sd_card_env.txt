@@ -1,0 +1,2 @@
+set bootargs androidboot.console=ttyO3 console=ttyO3,115200n8 root=/dev/mmcblk0p2 rw rootdelay=1 init=/init omap_vout_mod.vid1_static_vrfb_alloc=y omap_vout_mod.video1_numbuffers=6 omapfb.vram=0:4M ip=dhcp
+setenv bootcmd 'mmc init 0; fatload mmc 0 0x81c00000 uImage; bootm 0x81c00000'
